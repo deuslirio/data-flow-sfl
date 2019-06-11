@@ -10,7 +10,17 @@ When a participant finishes the experiment and clicks on the stop button, the lo
 To use Jaguar, you'll need to clone the [project](https://github.com/saeg/jaguar) change the **ScpSend** class to set your server, user and folder, and create a new jar.
 
 ### Subject programs
-We used five programs in our experiments: **JFreeChart**, **Commons Lang**, **Commons Math**, and **Joda-Time** were obtained from the [Defects4J database](https://github.com/rjust/defects4j). We used Defects4J version 1.1.0, which was forked in our [repository](https://github.com/saeg/defects4j/commits/master). The **jsoup's** faults were obtained by us from its [repository](https://github.com/jhy/jsoup/) and are available [here](https://github.com/saeg/experiments/tree/master/jaguar-2015). 
+We used 163 faults from five programs in our experiments: **JFreeChart**, **Commons Lang**, **Commons Math**, and **Joda-Time** were obtained from the [Defects4J database](https://github.com/rjust/defects4j). We used Defects4J version 1.1.0, which was forked in our [repository](https://github.com/saeg/defects4j/commits/master). The **jsoup's** faults were obtained by us from its [repository](https://github.com/jhy/jsoup/) and are available [here](https://github.com/saeg/experiments/tree/master/jaguar-2015). 
+
+| Project | # KLOC | # Test cases | # Faults |
+|---------|---------|---------|---------:|
+| Commons Lang | 22 | 2245 | 30 |
+| Commons Math | 85 | 3602 | 43 |
+| JFreeChart | 96 | 2205 | 26 |
+| Joda-Time | 28 | 4130 | 26 |
+| jsoup | 10 | 468 | 38 |
+| Total | -- | -- | 163 |
+
 
 ### Suspiciousness lists
 There are ten ranking metrics available in Jaguar: DRT, Jaccard, Kulczynski2, McCon, Minus, Ochiai, Op, Tarantula, Wong3, and Zoltar.
@@ -18,6 +28,9 @@ You can choose a ranking metric to calculate suspicious program elements bu runn
 
 ### Result extractor
 We created a script to analyze the SFL lists and compute the effectiveness of DF and CF for all programs. The extractor is available [here]().
+
+### Results
+The results of our experiment are available [here]().
 
 ### Instructions
 Install Java 7, Docker, Ansible, download Jaguar, put the subject program in folder, run the following commands to gather DF and CF spectra. After that, run the analyzer to compute the results and create the output.
