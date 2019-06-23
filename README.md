@@ -21,6 +21,31 @@ We used 163 faults from five programs in our experiments: **JFreeChart**, **Comm
 | jsoup | 10 | 468 | 38 |
 | Total | -- | -- | 163 |
 
+[List of all defects](DEFECTS.md)
+
+#### Defects4J
+Steps to install defects4J and download a specific version (more details can be found on [Defects4J repository](https://github.com/rjust/defects4j)):
+
+```shell
+# Install
+git clone https://github.com/rjust/defects4j
+cd defects4j
+./init.sh
+export PATH=$PATH:`pwd`/framework/bin
+
+# Create experiments folder
+cd ..
+mkdir experiments
+cd experiments
+
+# Download Commons Lang buggy version 1
+defects4j checkout -p Lang -v 1b -w ./lang_1_buggy
+
+# Run tests
+cd ./lang_1_buggy
+defects4j compile
+defects4j test
+```
 
 ### Suspiciousness lists
 There are ten ranking metrics available in Jaguar: DRT, Jaccard, Kulczynski2, McCon, Minus, Ochiai, Op, Tarantula, Wong3, and Zoltar.
