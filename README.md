@@ -3,7 +3,7 @@ Experimental package of the experiment comparing the use of data-flow and contro
 
 ### Jaguar CLI
 We used Jaguar CLI to gather both data-flow (DF) and control-flow (CF) spectra and to create suspiciousness lists.
-The Jaguar's version used in the experiment is available [here](https://github.com/saeg/).
+The Jaguar's version used in the experiment is available here: [Github page](https://github.com/saeg/jaguar/releases/tag/jaguar-0.0.6-4f9d6f0) or [jar](https://github.com/saeg/jaguar/releases/download/jaguar-0.0.6-4f9d6f0/br.usp.each.saeg.jaguar.core-0.0.6-SNAPSHOT-jar-with-dependencies.jar).
 
 ### Subject programs
 We used 163 faults from five programs in our experiments: **JFreeChart**, **Commons Lang**, **Commons Math**, and **Joda-Time** were obtained from the [Defects4J database](https://github.com/rjust/defects4j). We used Defects4J version 1.1.0, which was forked in our [repository](https://github.com/saeg/defects4j/commits/master). The **jsoup's** faults were obtained by us from its [repository](https://github.com/jhy/jsoup/) and are available [here](https://github.com/saeg/experiments/tree/master/jaguar-2015). 
