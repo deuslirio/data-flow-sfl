@@ -1,6 +1,9 @@
 # Evaluating data-flow coverage in Spectrum-based Fault localization (SFL)
 Experimental package of the experiment comparing the use of data-flow and control-flow in SFL.
 
+[![License](https://img.shields.io/github/license/saeg/ba-dua.svg?style=flat-square)](LICENSE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3257046.svg)](https://doi.org/10.5281/zenodo.3257046)
+
 ### Subject programs
 We used 163 faults from five programs in our experiments: **JFreeChart**, **Commons Lang**, **Commons Math**, and **Joda-Time** were obtained from the [Defects4J database](https://github.com/rjust/defects4j). We used Defects4J version 1.1.0, which was forked in our [repository](https://github.com/saeg/defects4j/commits/master). The **jsoup's** faults were obtained by us from its [repository](https://github.com/jhy/jsoup/) and are available [here](https://github.com/saeg/experiments/tree/master/jaguar-2015). 
 
