@@ -1,6 +1,10 @@
 # Evaluating data-flow coverage in Spectrum-based Fault localization (SFL)
 Experimental package of the experiment comparing the use of data-flow and control-flow in SFL.
 
+## Study results
+The results of our experiment are available [here]().
+The SFL lists that we created are available [here](https://github.com/saeg/user-study-sfl/tree/master/susp-lists). The lists also contain the time spent to run the programs and create the SFL lists, which we used to analyze the efficiency of DF and CF.
+
 ### Jaguar CLI
 We used Jaguar CLI to gather both data-flow (DF) and control-flow (CF) spectra and to create suspiciousness lists.
 The Jaguar's version used in the experiment is available here: [Github page](https://github.com/saeg/jaguar/releases/tag/jaguar-0.0.6-4f9d6f0) or [jar](https://github.com/saeg/jaguar/releases/download/jaguar-0.0.6-4f9d6f0/br.usp.each.saeg.jaguar.core-0.0.6-SNAPSHOT-jar-with-dependencies.jar).
@@ -19,8 +23,8 @@ We used 163 faults from five programs in our experiments: **JFreeChart**, **Comm
 
 [List of all defects](DEFECTS.md)
 
-#### Defects4J
-Steps to install defects4J and download a specific version (more details can be found on [Defects4J repository](https://github.com/rjust/defects4j)):
+#### Defects4J setup
+Steps to install Defects4J and download a specific version you want to run (more details can be found on [Defects4J repository](https://github.com/rjust/defects4j)):
 
 ```shell
 # Install
@@ -43,24 +47,13 @@ defects4j compile
 defects4j test
 ```
 
-### Suspiciousness lists
-There are ten ranking metrics available in Jaguar: DRT, Jaccard, Kulczynski2, McCon, Minus, Ochiai, Op, Tarantula, Wong3, and Zoltar.
-You can choose a ranking metric to calculate suspicious program elements bu running the option . The SFL lists that we created are available [here](https://github.com/saeg/user-study-sfl/tree/master/susp-lists). The lists also contain the time spent to run the programs and create the SFL lists, which we used to analyze the efficiency of DF and CF.
-
-### Result extractor
-We created a script to analyze the SFL lists and compute the effectiveness of DF and CF for all programs. The extractor is available [here]().
-
-### Results
-The results of our experiment are available [here]().
-
-### Instructions
-Install Java 7, Docker, Ansible, download Jaguar, put the subject program in folder, run the following commands to gather DF and CF spectra. After that, run the analyzer to compute the results and create the output.
-
-### Java version
+### Instructions to run Jaguar
 Jaguar was developed and the experiments were performed using Java 7.
+There are ten ranking metrics available in Jaguar: DRT, Jaccard, Kulczynski2, McCon, Minus, Ochiai, Op, Tarantula, Wong3, and Zoltar.
+You can choose a ranking metric to calculate suspicious program elements bu running the option .
 
-### Virtual machine / Container
-We created a [container](https://) that contains all the necessary resources to run the experiment. You'll just need to run the following command: 
+### SFL list analyzer (Podium)
+We created a tool to analyze the SFL lists and compute the effectiveness of DF and CF for all programs. The extractor is available [here](https://github.com/saeg/podium).
 
 ### Help
 Feel free to ask us in case of doubts.
