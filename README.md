@@ -1,4 +1,4 @@
-# Evaluating data-flow coverage in <\br> Spectrum-based Fault localization (SFL)
+# Evaluating data-flow coverage in Spectrum-based Fault localization (SFL)
 Experimental package of the experiment comparing the use of data-flow and control-flow in SFL.
 
 ### Subject programs
