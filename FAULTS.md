@@ -1,4 +1,4 @@
-# List of all defects
+# List of all faults
 
 | Project | Bug id  | Failing Tests | Passing Tests |
 |---------|---------|--------------|-------------:|
