@@ -1,7 +1,7 @@
 # List of all faults
 
 | Project | Bug id  | Failing Tests | Passing Tests |
-|---------|---------|--------------|-------------:|
+|:---------|---------:|--------------:|-------------:|
 | Commons Lang | 1 | 1 |	2286 |
 | Commons Lang | 2 | 1 |	2283 |
 | Commons Lang | 3 | 1 |	2281 |
