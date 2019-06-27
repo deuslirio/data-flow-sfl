@@ -55,7 +55,7 @@ defects4j test
 ```
 
 #### jsoup setup
-Each available version of jsoup can be accessed in our repository using the commit ID. See the **SAEG-INSTALL** files that we included inside each version to see the commit IDs and details about the fault, such as faulty class, faulty line, bug description, bug issue.
+Each available version of jsoup can be accessed in our repository using the commit ID. See the **SAEG-INSTALL** files that we included inside each version to see the commit IDs and details about the fault, such as faulty class, faulty line, bug description and bug issue.
 
 ### SFL list analyzer (Podium)
 We developed a tool called **podium** to analyze the SFL lists created by Jaguar and to compute the effectiveness of DF and CF for all programs. Podium is available [here](https://github.com/saeg/podium).
